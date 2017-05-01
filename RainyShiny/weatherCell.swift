@@ -23,6 +23,8 @@ class weatherCell: UITableViewCell {
     }
     
     func updateUI(){
+        
+        //Color shift
         if self.tag % 2 == 0{
             self.backgroundColor = UIColor.init(red: 241/255, green: 241/255, blue: 241/255, alpha: 1)
         }
