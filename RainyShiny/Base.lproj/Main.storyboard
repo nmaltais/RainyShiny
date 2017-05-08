@@ -91,13 +91,13 @@
                                         <rect key="frame" x="0.0" y="28" width="414" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oO8-LT-go9" id="LvP-T6-8jQ">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="79.666666666666671"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="79.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="unh-bs-Mx8">
                                                     <rect key="frame" x="20" y="10" width="374" height="59"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="atW-dD-am3">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="atW-dD-am3">
                                                             <rect key="frame" x="0.0" y="0.0" width="59" height="59"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="atW-dD-am3" secondAttribute="height" multiplier="1:1" id="zi0-a4-DCz"/>
@@ -154,6 +154,13 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <connections>
+                                            <outlet property="date" destination="Gvb-v7-NOF" id="IWS-wd-tLE"/>
+                                            <outlet property="highTemp" destination="qBj-Pk-mtF" id="QmS-bY-Y8S"/>
+                                            <outlet property="lowTemp" destination="jsu-qd-BKm" id="V71-my-sUg"/>
+                                            <outlet property="weatherImage" destination="atW-dD-am3" id="jLi-Br-1KE"/>
+                                            <outlet property="weatherType" destination="sOr-Su-zii" id="VG9-h8-e7e"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -180,7 +187,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="31.884057971014496" y="37.5"/>
+            <point key="canvasLocation" x="93" y="-99"/>
         </scene>
     </scenes>
 </document>

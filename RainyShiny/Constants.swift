@@ -8,13 +8,15 @@
 
 import Foundation
 
-let LAT = -36
+let COUNT = 10
 
-let LON = 123
+let LAT = Location.sharedInstance.latitude
+
+let LON = Location.sharedInstance.longitude
 
 let API_KEY = "9bf72caa73c5bbb9437ac0e2ae8d7ae0"
 
-let API_CALL_URL = "http://api.openweathermap.org/data/2.5/weather?lat=\(LAT)&lon=\(LON)&appid=\(API_KEY)"
+let CURRENT_WEATHER_API_CALL_URL = "http://api.openweathermap.org/data/2.5/weather?lat=\(LAT)&lon=\(LON)&appid=\(API_KEY)"
 
 
-
+let FORECAST_WEATHER_API_CALL_URL =  "http://api.openweathermap.org/data/2.5/forecast/daily?lat=\(LAT)&lon=\(LON)&cnt=\(COUNT)&appid=\(API_KEY)"
